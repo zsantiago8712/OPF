@@ -26,3 +26,7 @@ Configs initConfigs(void);
 Configs freeConfigs(Configs confs);
 boolean checkArguments(const int numArgs, const char** args, Configs confs);
 boolean getAnswer(void);
+boolean getIsProyect(Configs confs);
+boolean getIsC(Configs confs);
+char* getNameProyectFile(Configs confs);
+boolean getIsCmake(Configs confs);

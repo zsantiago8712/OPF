@@ -11,4 +11,6 @@
 #include "OPF.h"
 
 
+boolean createDir(const char* nameDir);
+
 #endif // DIRS_H

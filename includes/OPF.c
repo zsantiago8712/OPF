@@ -47,6 +47,24 @@ Configs freeConfigs(Configs confs){
 
 
 
+boolean getIsProyect(Configs confs){
+	return confs->isProyect;
+}
+
+
+boolean getIsC(Configs confs){
+	return confs->isC;
+}
+
+char* getNameProyectFile(Configs confs){
+	return confs->nameProyectFile;
+}
+
+
+boolean getIsCmake(Configs confs){
+	return confs->isCmake;
+}
+
 boolean checkArguments(const int numArgs, const char** args, Configs confs){
 
 	if(checkNumArgs(numArgs) && setConfigurations(args, confs)) 
@@ -129,9 +147,9 @@ static boolean setConfigurations(const char** args, Configs confs){
 boolean getAnswer(void){
 	char answer = 'q';
 
-	while (answer != 'y' || answer != 'n') {
+	while (answer == 'y' || answer == 'n') {
 		SYSCLEAR
-		printf("Ya existe un archivo con ese nombre, seguro quieres reesecibirlo (Se perdera todo lo que tenga dentro!) [Y/N]\n");
+		printf("Ya existe un Archivo/Directorio con ese nombre, seguro quieres reesecibirlo (Se perdera todo lo que tenga dentro!) [Y/N]\n");
 		scanf("%c", &answer);
 	}
 

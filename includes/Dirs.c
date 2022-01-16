@@ -1,4 +1,5 @@
 #include "Dirs.h"
+#include <stdio.h>
 #include <sys/stat.h>
 
 
@@ -14,6 +15,7 @@ boolean createDir(const char* nameDir){
 	}
 	
 	mkdir(nameDir, 0777);
+	puts("DIR CREADO!");
 	return true;
 }
 

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.19)
 
 set(CMAKE_C_STANDARD 11)
-project(CBLAS)
-set(SRC src)
+project(OPF)
+set(SRC includes)
 
 
 add_executable(${PROJECT_NAME} main.c)
